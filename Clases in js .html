@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases in js</title>
+</head>
+<body>
+    <h2>JAVA SCRIPT</h2>
+    <P>How to use a Java Script clases</P>
+    <P id="student1"></P>
+    <p id ="student2"></p>
+    <script>
+class student{
+constructor(name, year){
+
+this.name = name;
+
+this.year = year;
+
+}
+
+age(){
+
+let date = new Date();
+
+return date.getFullYear() - this.year;
+
+}
+}
+
+student1 = new student("Giwa", 2010);
+document.getElementById("student1").innerHTML = "My name is " + student1.name + " and I am " + student1.age() + " years old";
+student2 = new student("Ryan", 2012)
+document.getElementById("student2").innerHTML = "My name is " + student2.name + "  I am " + student2.age() + " years old";
+</script>
+</body>
+</html>
