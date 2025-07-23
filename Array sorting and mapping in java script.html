@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in js </title>
+</head>
+<body>
+    <p>Click on one of the below button to arrange number either assending or decending order</p>
+    <button onclick="Ascending()"> Ascending</button>
+    <button onclick="Descending()">Descending</button>
+    <p id="result"></p>
+    <script>
+        var numbers = [54,90,76,98,14,20,45,67,89,12];
+        document.getElementById("result").innerHTML = numbers;
+        function Ascending(){
+            numbers.sort(function(a, b){return a - b});
+            document.getElementById("result").innerHTML = numbers;
+        }
+        function Descending(){
+            numbers.sort(function(a, b){return b - a});
+            document.getElementById("result").innerHTML = numbers;
+        }
+    </script>
+</body>
+</html>
