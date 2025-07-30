@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json in js</title>
+</head>
+<body>
+    <h4><p>Json in js Asyncronous:</p></h4>
+    <p id="result"></p>
+    <script>
+        var frst ={name:"MDATHIR", age:15, city:"New York"};
+        var scnd = JSON.stringify(frst);
+        var thr = JSON.parse(scnd);
+        document.getElementById("result").innerHTML = "Name: " + thr.name;
+    </script>
+</body>
+</html>
