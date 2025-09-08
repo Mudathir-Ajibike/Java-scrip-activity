@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <style>
+        .footer{
+            position: fixed;
+            left: 0%;
+             bottom: 0;
+                width: 100%;
+                background-color: blue;
+                color: white;
+                text-align: center;
+                }
+        
+        .carousel-snap {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            /* Snap horizontally, and it's required */
+            max-width: 70%;
+        }
+
+        .carousel-snap img {
+            width: 100%;
+            flex-shrink: 0;
+            scroll-snap-align: center;
+            /* Aligns the image to the center of the container */
+        }
+
+        /* Optional: Hide the scrollbar for a cleaner look */
+        .carousel-snap::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: aqua;
+
+        }
+
+        .navbar {
+            background-color: blue;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: brown;
+            border-radius: 5px;
+
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">MySite</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 justify-content-start">
+                <img src="images (1).jpeg" alt="my photo" style="width:180px; height: 100px; border-radius:20px;">
+            </div>
+            <div class="col-6 justify-content-end">
+                <b>
+                    <h2 style="color:blue;">About myself</h2>
+                </b>
+                <p style="color: blue;">Giwa is a <i>Web Producer</i>trying to find is way
+                    through tech world where nothing is imposible</p>
+            </div>
+        </div>
+        <h3 style="color: blue;">My work</h3>
+        <div class="carousel-snap">
+            <img src="dice.png">
+            <img src="stopwatch.png">
+        </div>
+        <div class="container-fluid d-flex" id="projets">
+            <div class="row">
+                <div class="card" style="width: 16rem;" id="card1">
+                    <img class="card-img-top" scr="images (1).jpeg">
+                    <div class="card-body" style="background-color:dimgray;">
+                        <h3 class="card-title" style="color:blue;">A calculator</h3>
+                        <p class="card-text text-white">
+                            This is a projet i made using HTML,CSS and js
+                        </p>
+                        <a class="btn-btn-sucess text-white" href="" style="background-color:blue ;">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>@copy all right and reserve by mudatech</p>
+            </div>
+
+</body>
+
+</html>
